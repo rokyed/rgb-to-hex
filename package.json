@@ -1,14 +1,17 @@
 {
   "name": "rgb-to-hex",
   "main": "./lib/rgb-to-hex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "rgb-to-hex:toggle"
   },
-  "repository": "https://github.com/atom/rgb-to-hex",
+  "repository": {
+      "type": "git",
+      "url": "http://github.com/rokyed/rgb-to-hex"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
