@@ -34,15 +34,17 @@ module.exports = RgbToHex =
 
          rgbarr = rgb.split(',')
 
-         return "#" + this.componentToHex(rgbarr[0]) + this.componentToHex(rgbarr[1]) + this.componentToHex(rgbarr[2]) + semis
+         color =  "#" + this.componentToHex(rgbarr[0]) + this.componentToHex(rgbarr[1]) + this.componentToHex(rgbarr[2]) + semis
 
+         if color.substr(1,3) == color.substr(4,3)
+             color = color.substr(0,4)
+
+
+         return color
     componentToHex: (c) ->
         c = new Number(c)
         hex = c.toString(16)
         if hex.length == 1
             hex = "0" + hex
-
-        if hex[0] == hex[1]
-            hex = hex[0]
 
         return hex
