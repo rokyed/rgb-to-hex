@@ -39,8 +39,10 @@ module.exports = RgbToHex =
     componentToHex: (c) ->
         c = new Number(c)
         hex = c.toString(16)
+        if hex.length == 1
+            hex = "0" + hex
 
-        if hex.length > 1
-            return hex
-        else
-            return "0" + hex
+        if hex[0] == hex[1]
+            hex = hex[0]
+
+        return hex
