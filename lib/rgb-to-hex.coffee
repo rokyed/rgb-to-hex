@@ -39,8 +39,8 @@ module.exports = RgbToHex =
          if color.substr(1,3) == color.substr(4,3)
              color = color.substr(0,4)
 
-
          return color
+
     componentToHex: (c) ->
         c = new Number(c)
         hex = c.toString(16)
