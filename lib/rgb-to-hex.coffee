@@ -36,8 +36,8 @@ module.exports = RgbToHex =
 
          color =  "#" + this.componentToHex(rgbarr[0]) + this.componentToHex(rgbarr[1]) + this.componentToHex(rgbarr[2]) + semis
 
-         if color.substr(1,3) == color.substr(4,3)
-             color = color.substr(0,4)
+         if color[1] == color[2] &&  color[3] == color[4] &&  color[5] == color[6]
+             color = color.substr(0,2) + color[3] + color[5]
 
          return color
 
