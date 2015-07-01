@@ -1,7 +1,7 @@
 {
   "name": "rgb-to-hex",
   "main": "./lib/rgb-to-hex",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Select your rgb or rgba color, hit shortcut and you get a hex color!",
   "keywords": [],
   "activationCommands": {
